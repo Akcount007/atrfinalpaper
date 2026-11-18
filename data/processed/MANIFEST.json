@@ -1,0 +1,17 @@
+{
+  "created": "2026-11-12T16:00:05",
+  "seed": 42,
+  "datasets_version": "2.21.0",
+  "protocol_version": "1.0",
+  "official_test_ids_used": false,
+  "files": {
+    "pubmedqa.jsonl": {
+      "n": 500,
+      "sha256": "81da017b2f9ebbd7d2a3740cbe02d1481e5584d26c5f214a589523491470137f"
+    },
+    "mmlu.jsonl": {
+      "n": 450,
+      "sha256": "23aabd2965336ac1325249a8c5e1ea8a7a5a43e26fc1f0677de8c6adf3839177"
+    }
+  }
+}

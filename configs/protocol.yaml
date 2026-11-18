@@ -1,0 +1,37 @@
+# FROZEN EVALUATION PROTOCOL  (freeze BEFORE looking at any real results)
+# Any change after freezing must be logged in research_decisions.md with a reason.
+protocol_version: "1.0"
+seed: 42
+
+data:
+  pubmedqa:
+    hf_id: qiaojin/PubMedQA        # VERIFIED on HF: config pqa_labeled, 1000 rows, split "train", MIT
+    config: pqa_labeled
+    n_items: 500
+  mmlu:
+    hf_id: cais/mmlu               # VERIFIED on HF: 4-option MCQ, test split
+    n_per_domain: 150
+    domains:
+      biomed:   [anatomy, clinical_knowledge, college_biology, college_medicine, high_school_biology, medical_genetics, professional_medicine, virology]
+      physchem: [astronomy, college_chemistry, college_physics, conceptual_physics, high_school_chemistry, high_school_physics]
+      math:     [abstract_algebra, college_mathematics, elementary_mathematics, high_school_mathematics]
+
+# Verify license/access on each model card before use (status: TO VERIFY)
+models:
+  - {name: qwen2.5-1.5b-instruct,     hf_id: Qwen/Qwen2.5-1.5B-Instruct,      quant: none}
+  - {name: phi-3.5-mini-instruct,     hf_id: microsoft/Phi-3.5-mini-instruct, quant: none}
+  - {name: qwen2.5-7b-instruct-4bit,  hf_id: Qwen/Qwen2.5-7B-Instruct,        quant: 4bit}
+
+scoring:
+  n_permutations: 4        # identity order + 3 seeded option shuffles
+  batch_size: 8
+  prompt_style: chat
+
+metrics:
+  ece_bins: 10
+  selective_coverage: 0.8
+  bootstrap_resamples: 1000
+  ci_alpha: 0.05
+
+# Primary metric: accuracy on the identity-order prompt.
+# Primary confidence: max option probability on the identity-order prompt.

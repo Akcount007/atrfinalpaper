@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment and local secrets
+.env
+*.key
+*.token
+
+# Local cleanup staging area (never commit)
+_to_delete/
+
+# Data: ignore large processed jsonl files, but DO NOT ignore MANIFEST.json
+data/processed/*.jsonl
+!data/processed/MANIFEST.json
+
+# Restricted data (GPQA terms forbid posting questions/examples)
+data/gpqa*
+
+# LaTeX auxiliary build files
+*.aux
+*.log
+*.out
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.toc
+
+# Keep old draft locked PDF ignored if present, track only the final paper PDF
+paper/paper_factbench.pdf
+
+# NOTE: results/raw/ is explicitly NOT ignored so raw experimental evidence is committed.
+# NOTE: results/*.csv, results/figures, results/tables, results/logs are committed.
+# NOTE: paper/main.tex, paper/refs.bib, paper/paper_factbench_final.pdf are committed.

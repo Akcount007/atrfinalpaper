@@ -1,0 +1,22 @@
+% Paired McNemar tests, Holm over all comparisons
+\begin{tabular}{llllll}
+\toprule
+Slice & Model A & Model B & Acc A & Acc B & p (Holm) \\
+\midrule
+mmlu\_biomed & phi-3.5-mini-instruct & qwen2.5-1.5b-instruct & 0.773 & 0.693 & 0.351 \\
+mmlu\_biomed & phi-3.5-mini-instruct & qwen2.5-7b-instruct-4bit & 0.773 & 0.733 & 0.981 \\
+mmlu\_biomed & qwen2.5-1.5b-instruct & qwen2.5-7b-instruct-4bit & 0.693 & 0.733 & 0.981 \\
+mmlu\_math & phi-3.5-mini-instruct & qwen2.5-1.5b-instruct & 0.473 & 0.380 & 0.490 \\
+mmlu\_math & phi-3.5-mini-instruct & qwen2.5-7b-instruct-4bit & 0.473 & 0.567 & 0.357 \\
+mmlu\_math & qwen2.5-1.5b-instruct & qwen2.5-7b-instruct-4bit & 0.380 & 0.567 & 0.003 \\
+mmlu\_physchem & phi-3.5-mini-instruct & qwen2.5-1.5b-instruct & 0.573 & 0.453 & 0.123 \\
+mmlu\_physchem & phi-3.5-mini-instruct & qwen2.5-7b-instruct-4bit & 0.573 & 0.647 & 0.490 \\
+mmlu\_physchem & qwen2.5-1.5b-instruct & qwen2.5-7b-instruct-4bit & 0.453 & 0.647 & $<$0.001 \\
+pubmedqa\_closed & phi-3.5-mini-instruct & qwen2.5-1.5b-instruct & 0.324 & 0.552 & $<$0.001 \\
+pubmedqa\_closed & phi-3.5-mini-instruct & qwen2.5-7b-instruct-4bit & 0.324 & 0.418 & $<$0.001 \\
+pubmedqa\_closed & qwen2.5-1.5b-instruct & qwen2.5-7b-instruct-4bit & 0.552 & 0.418 & $<$0.001 \\
+pubmedqa\_context & phi-3.5-mini-instruct & qwen2.5-1.5b-instruct & 0.660 & 0.660 & 1.000 \\
+pubmedqa\_context & phi-3.5-mini-instruct & qwen2.5-7b-instruct-4bit & 0.660 & 0.728 & 0.004 \\
+pubmedqa\_context & qwen2.5-1.5b-instruct & qwen2.5-7b-instruct-4bit & 0.660 & 0.728 & 0.015 \\
+\bottomrule
+\end{tabular}

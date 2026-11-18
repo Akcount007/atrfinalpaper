@@ -1,0 +1,6 @@
+slice,n,chance_acc,majority_acc,majority_class
+mmlu_biomed,150,0.25,0.2733333333333333,1
+mmlu_math,150,0.25,0.3,3
+mmlu_physchem,150,0.25,0.35333333333333333,3
+pubmedqa_closed,500,0.3333333333333333,0.552,0
+pubmedqa_context,500,0.3333333333333333,0.552,0

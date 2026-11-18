@@ -1,0 +1,4 @@
+model,closed_acc,closed_rec_yes,closed_rec_no,closed_rec_maybe,context_acc,context_rec_yes,context_rec_no,context_rec_maybe,delta_acc,context_gain_b,context_loss_c,mcnemar_p_holm
+phi-3.5-mini-instruct,0.324,0.438,0.065,0.545,0.66,0.746,0.58,0.473,0.336,198,30,4.584787719312194e-31
+qwen2.5-1.5b-instruct,0.552,0.837,0.26,0.018,0.66,0.953,0.396,0.0,0.108,77,23,5.513580775850053e-08
+qwen2.5-7b-instruct-4bit,0.418,0.663,0.053,0.309,0.728,0.851,0.692,0.218,0.31,186,31,7.839506329246623e-28

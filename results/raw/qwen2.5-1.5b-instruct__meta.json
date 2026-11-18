@@ -1,0 +1,18 @@
+{
+  "model": "qwen2.5-1.5b-instruct",
+  "backend": "hf",
+  "limit": null,
+  "protocol_version": "1.0",
+  "seed": 42,
+  "K": 4,
+  "batch_size": 8,
+  "prompt_style": "chat",
+  "git_commit": null,
+  "python": "3.13.16",
+  "started": "2026-11-12T11:13:40",
+  "hf_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "quant": "none",
+  "torch": "2.14.1+cu130",
+  "transformers": "4.45.2",
+  "gpu": "Tesla T4"
+}

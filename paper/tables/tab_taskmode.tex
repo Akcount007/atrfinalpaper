@@ -1,0 +1,12 @@
+% RQ2 context minus closed-book (PubMedQA)
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lllll}
+\toprule
+Model & $\Delta\text{Acc}$ [95\% CI] & $\Delta\text{ECE}$ [95\% CI] & $\Delta\text{Brier}$ [95\% CI] & McNemar $p$ (Holm) \\
+\midrule
+phi-3.5-mini-instruct & 0.336 [0.286, 0.390] & -0.305 [-0.359, -0.250] & -0.613 [-0.715, -0.516] & $<$0.001 \\
+qwen2.5-1.5b-instruct & 0.108 [0.072, 0.146] & -0.016 [-0.056, 0.020] & -0.123 [-0.176, -0.068] & $<$0.001 \\
+qwen2.5-7b-instruct-4bit & 0.310 [0.256, 0.364] & -0.275 [-0.331, -0.220] & -0.571 [-0.671, -0.475] & $<$0.001 \\
+\bottomrule
+\end{tabular}%
+}

@@ -1,0 +1,16 @@
+model,slice,N,consistent_correct_n,consistent_correct_pct,wavering_n,wavering_pct,stubborn_wrong_n,stubborn_wrong_pct,mean_conf_correct,mean_conf_wavering,mean_conf_stubborn_wrong
+phi-3.5-mini-instruct,mmlu_biomed,150,99,66.0,34,22.7,17,11.3,0.981,0.952,1.0
+phi-3.5-mini-instruct,mmlu_math,150,31,20.7,102,68.0,17,11.3,0.942,0.871,0.916
+phi-3.5-mini-instruct,mmlu_physchem,150,64,42.7,68,45.3,18,12.0,0.967,0.883,0.972
+phi-3.5-mini-instruct,pubmedqa_closed,500,82,16.4,199,39.8,219,43.8,0.913,0.853,0.976
+phi-3.5-mini-instruct,pubmedqa_context,500,257,51.4,131,26.2,112,22.4,0.967,0.873,0.98
+qwen2.5-1.5b-instruct,mmlu_biomed,150,80,53.3,50,33.3,20,13.3,0.919,0.757,0.92
+qwen2.5-1.5b-instruct,mmlu_math,150,20,13.3,119,79.3,11,7.3,0.751,0.654,0.813
+qwen2.5-1.5b-instruct,mmlu_physchem,150,46,30.7,69,46.0,35,23.3,0.918,0.776,0.853
+qwen2.5-1.5b-instruct,pubmedqa_closed,500,228,45.6,114,22.8,158,31.6,0.871,0.67,0.901
+qwen2.5-1.5b-instruct,pubmedqa_context,500,305,61.0,57,11.4,138,27.6,0.944,0.726,0.96
+qwen2.5-7b-instruct-4bit,mmlu_biomed,150,99,66.0,29,19.3,22,14.7,0.983,0.886,0.97
+qwen2.5-7b-instruct-4bit,mmlu_math,150,62,41.3,71,47.3,17,11.3,0.94,0.844,0.907
+qwen2.5-7b-instruct-4bit,mmlu_physchem,150,70,46.7,67,44.7,13,8.7,0.955,0.869,0.942
+qwen2.5-7b-instruct-4bit,pubmedqa_closed,500,171,34.2,184,36.8,145,29.0,0.94,0.854,0.966
+qwen2.5-7b-instruct-4bit,pubmedqa_context,500,328,65.6,85,17.0,87,17.4,0.978,0.84,0.96

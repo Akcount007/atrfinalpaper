@@ -1,0 +1,13 @@
+# Starting point only. After your FIRST successful run, record what you actually used:
+#   pip freeze > requirements.lock.txt   (and cite that file in the paper)
+numpy
+scipy
+pandas
+matplotlib
+pyyaml
+datasets
+transformers
+accelerate
+bitsandbytes   # only needed for the 4-bit 7B model
+lm_eval[hf]    # only needed for baseline validation (scripts/05_*)
+pytest

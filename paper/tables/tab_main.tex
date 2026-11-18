@@ -1,0 +1,24 @@
+% Main results per model and slice
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llllllllll}
+\toprule
+Model & Slice & $n$ & Acc [95\% CI] & ECE & Brier & AURC & $\text{SelAcc}_{0.8}$ & $\text{AUROC}_{\text{conf}}$ & Consistency \\
+\midrule
+phi-3.5-mini-instruct & mmlu\_biomed & 150 & 0.773 [0.707, 0.833] & 0.222 & 0.440 & 0.114 & 0.800 & 0.703 & 0.922 \\
+qwen2.5-1.5b-instruct & mmlu\_biomed & 150 & 0.693 [0.620, 0.760] & 0.216 & 0.524 & 0.157 & 0.733 & 0.725 & 0.878 \\
+qwen2.5-7b-instruct-4bit & mmlu\_biomed & 150 & 0.733 [0.660, 0.807] & 0.242 & 0.492 & 0.113 & 0.825 & 0.756 & 0.933 \\
+phi-3.5-mini-instruct & mmlu\_math & 150 & 0.473 [0.393, 0.553] & 0.424 & 0.881 & 0.350 & 0.525 & 0.721 & 0.747 \\
+qwen2.5-1.5b-instruct & mmlu\_math & 150 & 0.380 [0.307, 0.453] & 0.315 & 0.858 & 0.492 & 0.417 & 0.635 & 0.683 \\
+qwen2.5-7b-instruct-4bit & mmlu\_math & 150 & 0.567 [0.487, 0.647] & 0.334 & 0.746 & 0.234 & 0.633 & 0.750 & 0.822 \\
+phi-3.5-mini-instruct & mmlu\_physchem & 150 & 0.573 [0.493, 0.653] & 0.366 & 0.766 & 0.219 & 0.633 & 0.760 & 0.823 \\
+qwen2.5-1.5b-instruct & mmlu\_physchem & 150 & 0.453 [0.373, 0.533] & 0.398 & 0.839 & 0.331 & 0.508 & 0.758 & 0.822 \\
+qwen2.5-7b-instruct-4bit & mmlu\_physchem & 150 & 0.647 [0.573, 0.727] & 0.278 & 0.615 & 0.171 & 0.717 & 0.740 & 0.837 \\
+phi-3.5-mini-instruct & pubmedqa\_closed & 500 & 0.324 [0.282, 0.368] & 0.601 & 1.253 & 0.703 & 0.305 & 0.456 & 0.873 \\
+qwen2.5-1.5b-instruct & pubmedqa\_closed & 500 & 0.552 [0.508, 0.596] & 0.305 & 0.749 & 0.416 & 0.570 & 0.569 & 0.921 \\
+qwen2.5-7b-instruct-4bit & pubmedqa\_closed & 500 & 0.418 [0.374, 0.464] & 0.506 & 1.054 & 0.518 & 0.440 & 0.592 & 0.877 \\
+phi-3.5-mini-instruct & pubmedqa\_context & 500 & 0.660 [0.616, 0.704] & 0.296 & 0.640 & 0.213 & 0.703 & 0.693 & 0.911 \\
+qwen2.5-1.5b-instruct & pubmedqa\_context & 500 & 0.660 [0.622, 0.704] & 0.288 & 0.626 & 0.217 & 0.682 & 0.649 & 0.964 \\
+qwen2.5-7b-instruct-4bit & pubmedqa\_context & 500 & 0.728 [0.684, 0.770] & 0.231 & 0.483 & 0.126 & 0.795 & 0.761 & 0.946 \\
+\bottomrule
+\end{tabular}
+}
