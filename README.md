@@ -262,8 +262,8 @@ For the ACM-formatted version, compile `paper/main.tex` with `pdflatex` + `bibte
 
 ## 9. Dataset and Model Licenses
 
-- **MMLU:** MIT License (`[TO VERIFY: official cais/mmlu repository license terms]`).
-- **PubMedQA:** MIT License (`[TO VERIFY: official qiaojin/PubMedQA repository license terms]`).
+- **MMLU:** MIT License .
+- **PubMedQA:** MIT License .
 - **Qwen2.5 models:** Apache 2.0.
 - **Phi-3.5-mini-instruct:** MIT.
 - **GPQA:** excluded entirely; its terms forbid public distribution of items (`[TO VERIFY: Idavidrein/gpqa gating agreement]`).
